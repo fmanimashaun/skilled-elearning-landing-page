@@ -48,10 +48,15 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- Sass
-- Flexbox / grid layout
-- Mobile-first workflow
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript/ES6](https://262.ecma-international.org/6.0/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com)
+- [Figma](https://www.figma.com/)
+- [webpack 5](https://webpack.js.org/)
+- [sass](https://sass-lang.com/)
+- [postCSS](https://postcss.org/)
 
 ### What I learned
 
