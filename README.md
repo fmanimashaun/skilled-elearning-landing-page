@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/fmanimashaun/skilled-elearning-landing-page)
-- [Live Site URL](https://fmanimashaun.github.io/skilled-elearning-landing-page/)
+- [Live Site URL]( https://fmanimashaun.github.io/skilled-elearning-landing-page/)
 
 ## My process
 

@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git+https://github.com/fmanimashaun/artwork-listing-app.git"
+    "url": "git+git+https://github.com/fmanimashaun/skilled-elearning-landing-page.git"
   },
   "keywords": [],
   "author": "Engr. Animashaun Fisayo Michael",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fmanimashaun/artwork-listing-app/issues"
+    "url": "https://github.com/fmanimashaun/skilled-elearning-landing-page/issues"
   },
-  "homepage": "https://github.com/fmanimashaun/artwork-listing-app#readme",
+  "homepage": "https://github.com/fmanimashaun/skilled-elearning-landing-page#readme",
   "devDependencies": {
     "@babel/core": "^7.20.7",
     "@babel/plugin-transform-modules-commonjs": "^7.19.6",
