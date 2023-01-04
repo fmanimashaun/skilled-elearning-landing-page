@@ -1,0 +1,21 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use './_colors.scss';
+
+@mixin btn ($radius, $bg-color, $pt: 0.5em, $pb: 0.5em, $pl: 1.143em, $pr: 1.143em) {
+  border-radius: $radius;
+  padding: $pt $pl $pb $pr;
+  font-size: 1.125rem;
+  line-height: 1.556em;
+  color: $colrs;
+  background-color: $bg-color;
+  cursor: pointer;
+}
+
+@mixin btn-hover ($bg-color) {
+  &:hover {
+    background-color: $bg-color;
+    color: colors.$light;
+  }
+}
