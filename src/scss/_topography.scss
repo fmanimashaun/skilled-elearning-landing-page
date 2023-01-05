@@ -1,6 +1,2 @@
-$heading_xl: 2.5rem !default;
-$heading_l: 2rem !default;
-$heading_m: 1.5rem !default;
-$heading_s: 1.25rem !default;
-$body_m: 1rem !default;
-$body_s: 0.875rem !default;
+$logo: clamp(1.75rem, calc(1.18rem + 1.19vw), 2.25rem); // 28px - 36px
+$btn: clamp(1.00rem, calc(0.86rem + 0.30vw), 1.13rem); // 16px - 18px
