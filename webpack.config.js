@@ -10,8 +10,8 @@ module.exports = {
     static: './dist',
   },
   performance: {
-    maxAssetSize: 1000000,
-    maxEntrypointSize: 1000000,
+    maxAssetSize: 1500000,
+    maxEntrypointSize: 1500000,
     hints: 'warning',
   },
   plugins: [
