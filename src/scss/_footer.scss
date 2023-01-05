@@ -2,16 +2,17 @@
 @use "./_colors.scss";
 @use "_topography.scss" as fs;
 
-.header {
-  // position: absolute;
-  // inset-block-start: 0;
-  // inset-inline-start: 0;
-  $ptb: clamp(1rem, calc(0.52rem + 2.04vw), 1.5rem);
+.footer {
+  $ptb: 2.25rem;
   $plr: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem);
   padding: $ptb $plr;
 
+  background-color: colors.$dark-blue;
+
   @media only screen and (min-width: 768px) {
+    $ptb: clamp(2.25rem, calc(2.54rem + -0.60vw), 2.00rem);
     $plr: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem);
+    padding-block: $ptb;
     padding-inline: $plr;
   }
 
@@ -27,15 +28,22 @@
     font-weight: 800;
     font-size: fs.$logo;
     line-height: 1.25;
-    color: colors.$dark-blue;
+    color: colors.$light;
   }
 
   &__btn {
-    @include mixins.btn(28px, colors.$dark-blue);
-    @include mixins.btn-hover(colors.$light-blue);
+    @include mixins.btn(28px, colors.$blue-pink-gradient);
+    @include mixins.btn-hover(colors.$blue-pink-gradient-hover);
 
     @media only screen and (min-width: 768px) {
-      @include mixins.btn(28px, colors.$dark-blue, 0.78em, 0.78em, 1.78em, 1.78em);
+      @include mixins.btn(
+        28px,
+        colors.$blue-pink-gradient,
+        0.78em,
+        0.78em,
+        1.78em,
+        1.78em
+      );
     }
   }
 }
