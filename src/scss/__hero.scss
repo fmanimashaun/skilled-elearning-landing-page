@@ -1,0 +1,33 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+//   $ptb: clamp(1rem, calc(0.52rem + 2.04vw), 1.5rem);
+  $plr: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem);
+  padding-inline: $plr;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    $pl: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem);
+    padding-inline: $pl 0;
+  }
+
+  &__img {
+    overflow: visible;
+    padding: 37px;
+    border: 1px solid red;
+    @media only screen and (min-width: 768px) {
+      min-width: 216px;
+      width: 50%;
+      max-width: 317px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
