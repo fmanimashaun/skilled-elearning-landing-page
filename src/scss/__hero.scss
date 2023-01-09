@@ -3,6 +3,7 @@
 @use "./_mixin.scss" as mixins;
 @use "./_colors.scss";
 @use "_topography.scss" as fs;
+@use "_space" as space;
 
 .hero {
   display: flex;
@@ -57,19 +58,18 @@
   }
 
   &__img-wrapper {
+    margin-inline: space.$hero-img-outer-offset-small;
+    padding: space.$hero-img-inner-offset-small-tb space.$hero-img-inner-offset-small-lr;
     border: 1px solid black;
-    padding-inline: 30px;
-  }
-
-  &__img {
-    overflow: visible;
-    border: 1px solid red;
     @media only screen and (min-width: 768px) {
       flex-basis: 217px;
-      flex-shrink: 0;
+      flex-shrink: 1;
       flex-grow: 1;
       max-width: 317px;
+      margin-inline: 0 space.$hero-img-outer-offset-large;
+      padding: 0;
     }
+
     img {
       display: block;
       width: 100%;
