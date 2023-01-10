@@ -1,3 +1,12 @@
+$header-padding-tb-small: clamp(1rem, calc(0.52rem + 2.04vw), 1.5rem); // 16px - 24px
+$header-padding-lr-small: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem); // 16px - 40px
+$header-padding-lr-large: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem); // 40px - 164px
+
+$footer-padding-lr-small: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem); // 16px - 40px
+$footer-padding-lr-large: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem); // 40px - 164px
+$footer-padding-tb-large: clamp(2.25rem, calc(2.54rem + -0.60vw), 2.00rem); // 36px - 32px
+
+
 $hero-img-outer-offset-small: clamp(0.50rem, calc(-0.10rem + 2.54vw), 1.13rem); // 8px - 18px
 $hero-img-outer-offset-large: clamp(2.63rem, calc(1.77rem + 1.79vw), 3.38rem); // 42px - 54px
 $hero-img-inner-offset-small-lr: clamp(2.31rem, calc(0.05rem + 9.67vw), 4.69rem); // 37px - 75px

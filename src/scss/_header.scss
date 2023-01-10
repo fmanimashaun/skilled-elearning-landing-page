@@ -1,18 +1,15 @@
 @use "./_mixin.scss" as mixins;
 @use "./_colors.scss";
 @use "_topography.scss" as fs;
+@use "_space" as space;
 
 .header {
-  // position: absolute;
-  // inset-block-start: 0;
-  // inset-inline-start: 0;
-  $ptb: clamp(1rem, calc(0.52rem + 2.04vw), 1.5rem);
-  $plr: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem);
-  padding: $ptb $plr;
+  padding: space.$header-padding-tb-small space.$header-padding-lr-small;
+  width: 100%;
+  max-width: 1440px;
 
   @media only screen and (min-width: 768px) {
-    $plr: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem);
-    padding-inline: $plr;
+    padding-inline: space.$header-padding-lr-large;
   }
 
   &__wrapper {
