@@ -4,7 +4,8 @@
 @use "_space" as space;
 
 .header {
-  padding: space.$header-padding-tb-small space.$header-padding-lr-small;
+  padding: space.$header-padding-t-small space.$header-padding-lr-small 0 space.$header-padding-lr-small;
+  margin-block-end: space.$header-margin-b-small;
   width: 100%;
   max-width: 1440px;
 

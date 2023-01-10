@@ -5,22 +5,28 @@
 @use "_topography.scss" as fs;
 @use "_space" as space;
 
+.main {
+  width: 100%;
+  max-width: 1440px;
+  padding-inline: space.$main-padding-lr-small;
+
+  @media only screen and (min-width: 768px) {
+    padding-inline: space.$main-padding-l-large space.$main-padding-r-large;
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  //   $ptb: clamp(1rem, calc(0.52rem + 2.04vw), 1.5rem);
-  $plr: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem);
-  padding-inline: $plr;
+  width: 100%;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    $plr: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem);
-    padding-inline: $plr;
-    padding-block-start: space.$hero-offset-top;
+    gap: 33px;
   }
 
   &__body {
@@ -31,10 +37,9 @@
     gap: 1.5625rem;
     width: 100%;
     @media only screen and (min-width: 768px) {
-      flex-basis: 398px;
-      flex-shrink: 0;
-      flex-grow: 1;
-      max-width: 457px;
+      flex-basis: 457px;
+      min-width: 398px;
+      padding-block-start: space.$hero-body-padding-t-large;
     }
   }
 
@@ -50,27 +55,42 @@
 
   &__text {
     font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.625;
+    color: colors.$grey;
+    word-spacing: 0.1em;
     @media only screen and (min-width: 768px) {
       font-size: fs.$hero-subtext;
-      line-height: 1.56;
+    }
+  }
+
+  &__btn {
+    @include mixins.btn(28px, colors.$orange-pink-gradient);
+    @include mixins.btn-hover(colors.$orange-pink-gradien-hover);
+
+    @media only screen and (min-width: 768px) {
+      @include mixins.btn(
+        28px,
+        colors.$orange-pink-gradient,
+        0.78em,
+        0.78em,
+        1.78em,
+        1.78em
+      );
     }
   }
 
   &__img-wrapper {
     position: relative;
-    top: -27px;
-    margin-inline: space.$hero-img-outer-offset-small;
-    max-width: 319px;
+    width: 100%;
     padding: 6.5% 10%;
     border: 1px solid black;
+
     @media only screen and (min-width: 768px) {
       flex-basis: 217px;
-      flex-shrink: 1;
+      flex-shrink: 0;
       flex-grow: 1;
-      min-width: 217px;
-      margin-inline: 0 space.$hero-img-outer-offset-large;
+      max-width: 317px;
       padding: 0;
     }
 
@@ -82,17 +102,20 @@
   }
 
   &__img-bg {
-    position: absolute;
-    $width: 100%;
-    width: $width;
-    height: calc(2 * $width);
-    z-index: 100;
-    bottom: 0;
-    left: 0;
-    border-radius: 167px;
-    background: colors.$blue-pink-gradient;
-    transform: rotate(45deg);
-    transform-origin: 50% 86%;
-    z-index: -1;
+    display: none;
+    @media only screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 200%;
+      z-index: 100;
+      bottom: 0;
+      left: 0;
+      border-radius: 158px;
+      background: colors.$blue-pink-gradient;
+      transform: rotate(45deg);
+      transform-origin: 50% 86%;
+      z-index: -1;
+    }
   }
 }
