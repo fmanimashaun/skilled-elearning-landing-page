@@ -22,7 +22,7 @@
       <!-- ***********************  PAGE MAIN *********************** -->
       <main class="main">
         <section class="hero">
-          <article class="hero__body">
+          <article class="hero__body-left">
             <h1 class="hero__title">Maximize skill,<br />minimize budget</h1>
             <p class="hero__text">
               Our modern courses across a range of in-demand skills will give
@@ -30,34 +30,36 @@
             </p>
             <button class="hero__btn">Get Started</button>
           </article>
-          <div class="hero__img-wrapper">
-            <picture class="hero__img">
-              <source
-                srcset="img/small.png"
-                media="(max-width: 767px)"
-                sizes="100vw"
-              />
-              <source
-                srcset="img/medium.png"
-                media="(min-width: 768px) and (max-width: 1439px)"
-                sizes="(min-width: 768px) 50vw, 100vw"
-              />
-              <source
-                srcset="img/large.png"
-                media="(min-width: 1440px)"
-                sizes="(min-width: 1440px) 50vw, 100vw"
-              />
-              <img src="img/small.png" alt="hero image" />
-            </picture>
-            <div class="hero__details members">
-              <p class="hero__details-title">Members</p>
-              <p class="hero__details-detail">29k</p>
+          <div class="hero__body-right">
+            <div class="hero__img-wrapper">
+              <picture class="hero__img">
+                <source
+                  srcset="img/small.png"
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="img/medium.png"
+                  media="(min-width: 768px) and (max-width: 1439px)"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+                <source
+                  srcset="img/large.png"
+                  media="(min-width: 1440px)"
+                  sizes="(min-width: 1440px) 50vw, 100vw"
+                />
+                <img src="img/small.png" alt="hero image" />
+              </picture>
+              <div class="hero__details members">
+                <p class="hero__details-title">Members</p>
+                <p class="hero__details-detail">29k</p>
+              </div>
+              <div class="hero__details hours">
+                <p class="hero__details-title">Course hours</p>
+                <p class="hero__details-detail">1,451</p>
+              </div>
+              <div aria-hidden="true" class="hero__img-bg"></div>
             </div>
-            <div class="hero__details hours">
-              <p class="hero__details-title">Course hours</p>
-              <p class="hero__details-detail">1,451</p>
-            </div>
-            <div aria-hidden="true" class="hero__img-bg"></div>
           </div>
         </section>
         <section class="services">

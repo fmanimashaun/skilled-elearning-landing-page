@@ -29,7 +29,7 @@
     gap: 33px;
   }
 
-  &__body {
+  &__body-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,10 +84,8 @@
     }
   }
 
-  &__img-wrapper {
-    position: relative;
+  &__body-right {
     width: 100%;
-    padding: 6.5% 10%;
     border: 1px solid black;
 
     @media only screen and (min-width: 768px) {
@@ -97,12 +95,27 @@
       max-width: 317px;
       padding: 0;
     }
+  }
 
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
+  &__img-wrapper{
+    position: relative;
+    padding: 24px 37px;
+    border: 1px solid red;
+    width: 100%;
+    max-width: 327px;
+    margin-inline: auto;
+
+    @media only screen and (min-width: 768px) {
+      padding: 0;
+      max-width: 100%;
+      margin-inline: 0;
     }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   &__details {
@@ -117,24 +130,52 @@
       font-size: 14px;
       line-height: 28px;
       color: colors.$grey;
+
+      @media only screen and (min-width: 1440px) {
+        font-size: 16px;
+        line-height: 28px;
+      }
     }
 
     &-detail {
       font-weight: 800;
       font-size: 32px;
       line-height: 40px;
+
+      @media only screen and (min-width: 1440px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
     }
 
     &.members {
       top: 0;
       right: 0;
-      padding: 0.5em 1em;
+      padding: 16px 20px;
+
+      @media only screen and (min-width: 768px) {
+        transform: translate(37px, 24px);
+      }
+
+      @media only screen and (min-width: 1440px) {
+        padding: 20px 57px 20px 24px;
+        transform: translate(76%, 86%);
+      }
     }
 
     &.hours {
       bottom: 0;
       left: 0;
-      padding: 0.5em 1em;
+      padding: 16px 45px 16px 20px;
+
+      @media only screen and (min-width: 768px) {
+        transform: translate(-37px, -24px);
+      }
+
+      @media only screen and (min-width: 1440px) {
+        padding: 20px 72px 20px 24px;
+        transform: translate(-60%, -82.5%);
+      }
     }
   }
 
