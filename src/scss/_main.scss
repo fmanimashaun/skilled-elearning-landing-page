@@ -21,6 +21,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  margin-block-end: 66px;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
@@ -69,10 +70,12 @@
   }
 
   &__btn {
+    margin-block-end: 46px;
     @include mixins.btn(28px, colors.$orange-pink-gradient);
     @include mixins.btn-hover(colors.$orange-pink-gradien-hover);
 
     @media only screen and (min-width: 768px) {
+      margin-block-end: 0;
       @include mixins.btn(
         28px,
         colors.$orange-pink-gradient,
@@ -157,7 +160,7 @@
         padding-block: space.$hero-details-tb-padding;
         padding-inline-start: space.$hero-details-l-padding;
         padding-inline-end: space.$hero-details-members-r-padding;
-        transform: translate(space.$hero-details-members-h-offset, -14px);
+        transform: translate(space.$hero-details-members-h-offset, space.$hero-details-members-v-offset);
       }
     }
 
@@ -170,7 +173,7 @@
         padding-block: space.$hero-details-tb-padding;
         padding-inline: space.$hero-details-l-padding;
         padding-inline-end: space.$hero-details-hours-r-padding;
-        transform: translate(calc(-1 * space.$hero-details-hours-h-offset), 38px);
+        transform: translate(calc(-1 * space.$hero-details-hours-h-offset), calc(-1 * space.$hero-details-hours-v-offset));
       }
     }
   }
