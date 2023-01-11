@@ -127,24 +127,24 @@
 
     &-title {
       font-weight: 700;
-      font-size: 14px;
-      line-height: 28px;
+      font-size: 0.875rem;
+      line-height: 1.75rem;
       color: colors.$grey;
 
-      @media only screen and (min-width: 1440px) {
-        font-size: 16px;
-        line-height: 28px;
+      @media only screen and (min-width: 768px) {
+        font-size: fs.$hero-details-title;
+        line-height: 1.75rem;
       }
     }
 
     &-detail {
       font-weight: 800;
-      font-size: 32px;
-      line-height: 40px;
+      font-size: 2rem;
+      line-height: 2.5rem;
 
-      @media only screen and (min-width: 1440px) {
-        font-size: 40px;
-        line-height: 50px;
+      @media only screen and (min-width: 768px) {
+        font-size: fs.$hero-details-text;
+        line-height: 1.25;
       }
     }
 
@@ -154,12 +154,10 @@
       padding: 16px 20px;
 
       @media only screen and (min-width: 768px) {
-        transform: translate(37px, 24px);
-      }
-
-      @media only screen and (min-width: 1440px) {
-        padding: 20px 57px 20px 24px;
-        transform: translate(76%, 86%);
+        padding-block: space.$hero-details-tb-padding;
+        padding-inline-start: space.$hero-details-l-padding;
+        padding-inline-end: space.$hero-details-members-r-padding;
+        transform: translate(space.$hero-details-members-h-offset, -14px);
       }
     }
 
@@ -169,12 +167,10 @@
       padding: 16px 45px 16px 20px;
 
       @media only screen and (min-width: 768px) {
-        transform: translate(-37px, -24px);
-      }
-
-      @media only screen and (min-width: 1440px) {
-        padding: 20px 72px 20px 24px;
-        transform: translate(-60%, -82.5%);
+        padding-block: space.$hero-details-tb-padding;
+        padding-inline: space.$hero-details-l-padding;
+        padding-inline-end: space.$hero-details-hours-r-padding;
+        transform: translate(calc(-1 * space.$hero-details-hours-h-offset), 38px);
       }
     }
   }
