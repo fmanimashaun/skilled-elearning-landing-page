@@ -1,0 +1,37 @@
+$header-padding-t-small: clamp(1rem, calc(0.52rem + 2.04vw), 1.5rem); // 16px - 24px
+$header-margin-b-small: clamp(2.38rem, calc(1.3rem + 4.6vw), 5.44rem); // 38px - 87x
+$header-padding-lr-small: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem); // 16px - 40px
+$header-padding-lr-large: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem); // 40px - 164px
+
+$main-padding-lr-small: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem); // 16px - 40px
+$main-padding-l-large: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem); // 40px - 164px
+$main-padding-r-large: clamp(5.06rem, calc(-4.79rem + 20.54vw), 13.69rem); // 81px - 220px
+
+$hero-img-padding-r-large: clamp(3.19rem, calc(-1.6rem + 9.97vw), 7.38rem); // 51px - 118px
+$hero-img-padding-l-large: clamp(2.81rem, calc(-2.54rem + 11.16vw), 7.5rem); // 45px - 120px
+$hero-body-padding-t-large: clamp(2.94rem, calc(0.22rem + 5.65vw), 5.31rem); // 47px - 85px
+$hero-title-margin-b-large: clamp(1.56rem, calc(1.28rem + 0.6vw), 1.81rem); // 25px - 29px
+$hero-subtext-margin-b-large: clamp(1.5rem, calc(0.36rem + 2.38vw), 2.5rem); // 24px - 40px
+
+$hero-b-margin-small: clamp(4.13rem, calc(-0.05rem + 17.81vw), 8.5rem); // 66px - 136px
+$hero-b-margin-large: clamp(-8.5rem, calc(-10.36rem + 3.87vw), -6.87rem); // -136px - 110px
+
+$hero-details-tb-padding: clamp(1rem, calc(0.71rem + 0.6vw), 1.25rem); // 16px - 20px
+$hero-details-l-padding: clamp(1.25rem, calc(0.96rem + 0.6vw), 1.5rem); // 20px - 24px
+$hero-details-hours-r-padding: clamp(2.81rem, calc(0.88rem + 4.02vw), 4.5rem); // 45px - 72px
+$hero-details-members-r-padding:  clamp(1.25rem, calc(-1.39rem + 5.51vw), 3.56rem); // 20px - 57px
+$hero-details-hours-h-offset: clamp(2.81rem, calc(-2.54rem + 11.16vw), 7.5rem); // 45px - 120px
+$hero-details-members-h-offset: clamp(3.19rem, calc(-1.6rem + 9.97vw), 7.38rem); // 51px - 118px
+$hero-details-hours-v-offset: clamp(-2.37rem, calc(-12.09rem + 20.24vw), 6.13rem); // -38px - 98px
+$hero-details-members-v-offset: clamp(-0.87rem, calc(-9.23rem + 17.41vw), 6.44rem); // -14px - 103px
+
+$service-b-margin: clamp(5rem, calc(3.68rem + 5.63vw), 8.75rem); // 80px - 140px
+$service-t-padding-large:  clamp(3.50rem, calc(2.93rem + 1.19vw), 4.00rem); // 56px - 64px
+$service-b-padding-large: clamp(2.00rem, calc(1.43rem + 1.19vw), 2.50rem); // 32px - 40px
+$service-title-b-margin: clamp(1rem, calc(0.43rem + 1.19vw), 1.5rem); // 16px - 24px
+$service-col-gap:  clamp(0.63rem, calc(-0.8rem + 2.98vw), 1.88rem); // 10px - 30px
+$service-row-gap:  clamp(1rem, calc(0.12rem + 3.76vw), 3.5rem); // 16px - 56px
+
+$footer-padding-lr-small: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem); // 16px - 40px
+$footer-padding-lr-large: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem); // 40px - 164px
+$footer-padding-tb-large: clamp(-2.25rem, calc(-2.54rem + 0.6vw), -2rem); // -36px - -32px

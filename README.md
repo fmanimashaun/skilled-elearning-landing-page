@@ -29,15 +29,15 @@ Users should be able to:
 
 #### Desktop view
 
-![Desktop view](screenshots/desktop-screenshot.png)
+![Desktop view](screenshots/desktop.png)
 
 #### Tablet view
 
-![Desktop view](screenshots/tablet-screenshot.png)
+![Desktop view](screenshots/tablet.png)
 
 #### Mobile view
 
-![Mobile view](screenshots/mobile-screenshot.png)
+![Mobile view](screenshots/mobile.png)
 
 ### Links
 

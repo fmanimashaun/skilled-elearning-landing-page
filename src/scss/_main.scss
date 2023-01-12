@@ -1,0 +1,339 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./_mixin.scss" as mixins;
+@use "./_colors.scss";
+@use "_topography.scss" as fs;
+@use "_space" as space;
+
+.main {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-inline: space.$main-padding-lr-small;
+
+  @media only screen and (min-width: 48rem) {
+    padding-inline: space.$main-padding-l-large space.$main-padding-r-large;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-block-end: space.$hero-b-margin-small;
+
+    @media only screen and (min-width: 48rem) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2.0625rem;
+      margin-block-end: calc(-1 * space.$hero-b-margin-large);
+    }
+  }
+
+  &__body-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5625rem;
+    width: 100%;
+
+    @media only screen and (min-width: 48rem) {
+      gap: 0;
+      flex-basis: 28.5625rem;
+      min-width: 24.875rem;
+      padding-block-start: space.$hero-body-padding-t-large;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.25;
+
+    @media only screen and (min-width: 48rem) {
+      margin-block-end: space.$hero-title-margin-b-large;
+      font-size: fs.$hero-title;
+      line-height: 1.27;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    color: colors.$grey;
+    word-spacing: 0.1em;
+    max-inline-size: 27.8125rem;
+
+    @media only screen and (min-width: 48rem) {
+      font-size: fs.$hero-subtext;
+      margin-block-end: space.$hero-subtext-margin-b-large;
+    }
+  }
+
+  &__btn {
+    margin-block-end: 2.875rem;
+
+    @include mixins.btn(1.75rem, colors.$orange-pink-gradient);
+    @include mixins.btn-hover(colors.$orange-pink-gradien-hover);
+
+    @media only screen and (min-width: 48rem) {
+      margin-block-end: 0;
+
+      @include mixins.btn(1.75rem,
+      colors.$orange-pink-gradient,
+      0.78em,
+      0.78em,
+      1.78em,
+      1.78em);
+    }
+  }
+
+  &__body-right {
+    width: 100%;
+
+    @media only screen and (min-width: 48rem) {
+      flex-basis: 13.5625rem;
+      flex-shrink: 0;
+      flex-grow: 1;
+      max-width: 19.8125rem;
+      padding: 0;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    padding: 1.5rem 2.3125rem;
+    width: 100%;
+    max-width: 20.4375rem;
+    margin-inline: auto;
+
+    @media only screen and (min-width: 48rem) {
+      padding: 0;
+      max-width: 100%;
+      margin-inline: 0;
+    }
+  }
+
+  &__img {
+    &-mobile {
+      display: block;
+      width: 100%;
+      height: auto;
+
+      @media only screen and (min-width: 48rem) {
+        display: none;
+      }
+    }
+
+    &-desktop {
+      display: none;
+      width: 100%;
+      height: auto;
+
+      @media only screen and (min-width: 48rem) {
+        display: block;
+      }
+    }
+  }
+
+  &__details {
+    position: absolute;
+    width: fit-content;
+    background-color: colors.$light;
+    box-shadow: 0 2.125rem 3.375rem rgba(6, 22, 141, 0.158854);
+    border-radius: 0.9375rem;
+
+    &-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 28px;
+      color: colors.$grey;
+
+      @media only screen and (min-width: 48rem) {
+        font-size: fs.$hero-details-title;
+        line-height: 28px;
+      }
+    }
+
+    &-detail {
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 40px;
+
+      @media only screen and (min-width: 48rem) {
+        font-size: fs.$hero-details-text;
+        line-height: 1.25;
+      }
+    }
+
+    &.members {
+      top: 0;
+      right: 0;
+      padding: 1rem 1.25rem;
+
+      @media only screen and (min-width: 48rem) {
+        padding-block: space.$hero-details-tb-padding;
+        padding-inline-start: space.$hero-details-l-padding;
+        padding-inline-end: space.$hero-details-members-r-padding;
+        transform: translate(space.$hero-details-members-h-offset, space.$hero-details-members-v-offset);
+      }
+    }
+
+    &.hours {
+      bottom: 0;
+      left: 0;
+      padding: 1rem 2.8125rem 1rem 1.25rem;
+
+      @media only screen and (min-width: 48rem) {
+        padding-block: space.$hero-details-tb-padding;
+        padding-inline: space.$hero-details-l-padding;
+        padding-inline-end: space.$hero-details-hours-r-padding;
+        transform: translate(calc(-1 * space.$hero-details-hours-h-offset), calc(-1 * space.$hero-details-hours-v-offset));
+      }
+    }
+  }
+
+  &__img-bg {
+    display: none;
+
+    @media only screen and (min-width: 48rem) {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 200%;
+      bottom: 0;
+      left: 0;
+      border-radius: 9.875rem;
+      background: colors.$blue-pink-gradient;
+      transform: rotate(45deg);
+      transform-origin: 50% 86%;
+      z-index: -1;
+    }
+  }
+}
+
+.services {
+  padding-block-end: space.$service-b-margin;
+  background: colors.$light-blue-gradient;
+  width: 100%;
+
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.33;
+
+    @media only screen and (min-width: 48rem) {
+      font-size: fs.$services-title;
+      line-height: 1.25;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20.625rem, 1fr));
+    gap: space.$service-row-gap space.$service-col-gap;
+    max-width: 31.25rem;
+    margin-inline: auto;
+    padding-inline: space.$footer-padding-lr-small;
+
+    @media only screen and (min-width: 48rem) {
+      max-width: 90rem;
+      padding-inline: space.$footer-padding-lr-large;
+    }
+  }
+}
+
+.service {
+  padding-block-start: 1.5rem;
+  box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0442381);
+
+  &-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: colors.$light;
+    border-radius: 0.625rem;
+    padding-inline: 1.75rem;
+    padding-block-start: 3.5rem;
+    padding-block-end: 2rem;
+
+    @media only screen and (min-width: 48rem) {
+      padding-inline: 2rem;
+      padding-block: space.$service-t-padding-large space.$service-b-padding-large;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    inset-block-start: -24px;
+    display: block;
+    width: 3.5rem;
+    height: auto;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-block-end: 16px;
+
+    @media only screen and (min-width: 48rem) {
+      font-size: fs.$service-title;
+      margin-block-end: space.$service-title-b-margin;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625;
+    color: colors.$grey;
+    margin-block-end: 1.5rem;
+
+    @media only screen and (min-width: 48rem) {
+      font-size: fs.$service-text;
+      line-height: 1.56;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: colors.$red-orange;
+    text-decoration: none;
+
+    &:hover {
+      color: colors.$light-pink;
+    }
+  }
+}
+
+.service-content.intro {
+  padding: 24px 0 0 0;
+  box-shadow: none;
+}
+
+.service.intro {
+  height: 100%;
+  border-radius: 0.625rem;
+  padding-inline: 1.75rem;
+  padding-block-end: 2rem;
+  padding-block-start: 1.5rem;
+  color: colors.$light;
+  background: colors.$orange-pink-gradient;
+
+  @media only screen and (min-width: 48rem) {
+    padding-block-start: 3.5rem;
+  }
+}

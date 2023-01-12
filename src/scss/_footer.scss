@@ -1,0 +1,51 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./_mixin.scss" as mixins;
+@use "./_colors.scss";
+@use "_topography.scss" as fs;
+@use "_space" as space;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: colors.$dark-blue;
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 36px space.$footer-padding-lr-small;
+
+    @media only screen and (min-width: 768px) {
+      padding: calc(-1 * space.$footer-padding-tb-large) space.$footer-padding-lr-large;
+    }
+  }
+
+  &__logo {
+    font-weight: 800;
+    font-size: fs.$logo;
+    line-height: 1.25;
+    color: colors.$light;
+  }
+
+  &__btn {
+    @include mixins.btn(28px, colors.$blue-pink-gradient);
+    @include mixins.btn-hover(colors.$blue-pink-gradient-hover);
+
+    @media only screen and (min-width: 768px) {
+      @include mixins.btn(
+        28px,
+        colors.$blue-pink-gradient,
+        0.78em,
+        0.78em,
+        1.78em,
+        1.78em
+      );
+    }
+  }
+}
