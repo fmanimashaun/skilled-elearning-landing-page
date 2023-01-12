@@ -21,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: fonts.$primary-ff;
+  color: colors.$dark-blue;
   background-color: colors.$light;
 }
 
@@ -28,9 +29,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
   margin-inline: auto;
+  overflow-x: hidden;
 
   & > * {
     max-width: 100%;

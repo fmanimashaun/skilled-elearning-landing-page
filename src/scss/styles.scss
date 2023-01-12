@@ -2,5 +2,12 @@
 /* stylelint-disable csstree/validator */
 @use '_reset.scss';
 @use './_global.scss';
-@use './_mixin.scss' as mixins;
-@use './_colors.scss';
+
+// header section
+@use './_header.scss';
+
+// hero section
+@use './_main.scss';
+
+// footer section
+@use './_footer.scss';

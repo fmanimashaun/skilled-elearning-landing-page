@@ -1,5 +1,7 @@
 $light: #fff;
 $light-blue: #666ca3;
+$ligher-blue: #f0f1ff;
+$grey: #83869a;
 $dark-blue: #13183f;
 $light-grey: #83869a;
 $medium-pink: #f74780;
@@ -11,3 +13,4 @@ $orange-pink-gradient: linear-gradient(180deg, $red-orange 0.04%, $magenta-pink 
 $blue-pink-gradient: linear-gradient(180deg, $medium-blue 0%, $magenta-pink 99.92%);
 $orange-pink-gradien-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, $red-orange 0%, $magenta-pink 100%);
 $blue-pink-gradient-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, $medium-blue -54.32%, $magenta-pink 100%);
+$light-blue-gradient: linear-gradient(180deg, $light 0%, $ligher-blue 100%);

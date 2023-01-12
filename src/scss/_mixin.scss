@@ -1,20 +1,26 @@
 /* stylelint-disable at-rule-no-unknown */
 /* stylelint-disable csstree/validator */
 @use './_colors.scss';
+@use "_topography.scss" as fs;
 
 @mixin btn ($radius, $bg-color, $pt: 0.5em, $pb: 0.5em, $pl: 1.143em, $pr: 1.143em) {
   border-radius: $radius;
   padding: $pt $pl $pb $pr;
-  font-size: 1.125rem;
-  line-height: 1.556em;
-  color: $colrs;
-  background-color: $bg-color;
+  font-size: fs.$btn;
+  line-height: 1.75;
+
+  @media only screen and (min-width: 1440px) {
+    line-height: 1.56;
+  }
+
+  color: colors.$light;
+  background: $bg-color;
+  border: none;
   cursor: pointer;
 }
 
 @mixin btn-hover ($bg-color) {
   &:hover {
-    background-color: $bg-color;
-    color: colors.$light;
+    background: $bg-color;
   }
 }
