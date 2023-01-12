@@ -1,3 +1,5 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
 @use "./_mixin.scss" as mixins;
 @use "./_colors.scss";
 @use "_topography.scss" as fs;
@@ -9,9 +11,6 @@
   align-items: center;
   width: 100%;
   background-color: colors.$dark-blue;
-  @media only screen and (min-width: 768px) {
-   
-  }
 
   &__wrapper {
     display: flex;
@@ -22,7 +21,7 @@
     max-width: 1440px;
     padding: 36px space.$footer-padding-lr-small;
 
-    @media only screen and (min-width:768px) {
+    @media only screen and (min-width: 768px) {
       padding: calc(-1 * space.$footer-padding-tb-large) space.$footer-padding-lr-large;
     }
   }

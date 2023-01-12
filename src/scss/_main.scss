@@ -80,17 +80,19 @@
 
   &__btn {
     margin-block-end: 2.875rem;
+
     @include mixins.btn(1.75rem, colors.$orange-pink-gradient);
     @include mixins.btn-hover(colors.$orange-pink-gradien-hover);
 
     @media only screen and (min-width: 48rem) {
       margin-block-end: 0;
+
       @include mixins.btn(1.75rem,
-        colors.$orange-pink-gradient,
-        0.78em,
-        0.78em,
-        1.78em,
-        1.78em);
+      colors.$orange-pink-gradient,
+      0.78em,
+      0.78em,
+      1.78em,
+      1.78em);
     }
   }
 
@@ -146,7 +148,7 @@
     position: absolute;
     width: fit-content;
     background-color: colors.$light;
-    box-shadow: 0rem 2.125rem 3.375rem rgba(6, 22, 141, 0.158854);
+    box-shadow: 0 2.125rem 3.375rem rgba(6, 22, 141, 0.158854);
     border-radius: 0.9375rem;
 
     &-title {
@@ -207,7 +209,6 @@
       position: absolute;
       width: 100%;
       height: 200%;
-      z-index: 100;
       bottom: 0;
       left: 0;
       border-radius: 9.875rem;
@@ -252,7 +253,7 @@
 
 .service {
   padding-block-start: 1.5rem;
-  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0442381);
 
   &-content {
     display: flex;

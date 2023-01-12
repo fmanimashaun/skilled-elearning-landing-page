@@ -8,9 +8,11 @@
   padding: $pt $pl $pb $pr;
   font-size: fs.$btn;
   line-height: 1.75;
+
   @media only screen and (min-width: 1440px) {
     line-height: 1.56;
   }
+
   color: colors.$light;
   background: $bg-color;
   border: none;
