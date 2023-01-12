@@ -21,13 +21,14 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin-block-end: 66px;
+  margin-block-end: space.$hero-b-margin-small;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     gap: 33px;
+    margin-block-end: calc(-1 * space.$hero-b-margin-large);
   }
 
   &__body-left {
@@ -89,7 +90,6 @@
 
   &__body-right {
     width: 100%;
-    border: 1px solid black;
 
     @media only screen and (min-width: 768px) {
       flex-basis: 217px;
@@ -103,7 +103,6 @@
   &__img-wrapper{
     position: relative;
     padding: 24px 37px;
-    border: 1px solid red;
     width: 100%;
     max-width: 327px;
     margin-inline: auto;
