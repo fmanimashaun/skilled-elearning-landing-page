@@ -13,6 +13,9 @@ $hero-body-padding-t-large: clamp(2.94rem, calc(0.22rem + 5.65vw), 5.31rem); // 
 $hero-title-margin-b-large: clamp(1.56rem, calc(1.28rem + 0.60vw), 1.81rem); // 25px - 29px
 $hero-subtext-margin-b-large: clamp(1.50rem, calc(0.36rem + 2.38vw), 2.50rem); // 24px - 40px
 
+$hero-b-margin-small: clamp(4.13rem, calc(-0.05rem + 17.81vw), 8.50rem); // 66px - 136px
+$hero-b-margin-large: clamp(-8.50rem, calc(-10.36rem + 3.87vw), -6.87rem); // -136px - 110px
+
 $hero-details-tb-padding: clamp(1.00rem, calc(0.71rem + 0.60vw), 1.25rem); // 16px - 20px
 $hero-details-l-padding: clamp(1.25rem, calc(0.96rem + 0.60vw), 1.50rem); // 20px - 24px
 $hero-details-hours-r-padding: clamp(2.81rem, calc(0.88rem + 4.02vw), 4.50rem); // 45px - 72px
@@ -24,4 +27,4 @@ $hero-details-members-v-offset: clamp(-0.87rem, calc(-9.23rem + 17.41vw), 6.44re
 
 $footer-padding-lr-small: clamp(1rem, calc(-0.43rem + 6.11vw), 2.5rem); // 16px - 40px
 $footer-padding-lr-large: clamp(2.5rem, calc(-6.43rem + 18.6vw), 10.31rem); // 40px - 164px
-$footer-padding-tb-large: clamp(2.25rem, calc(2.54rem + -0.60vw), 2.00rem); // 36px - 32px
+$footer-padding-tb-large: clamp(-2.25rem, calc(-2.54rem + 0.60vw), -2.00rem); // -36px - -32px
