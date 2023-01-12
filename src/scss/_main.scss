@@ -70,6 +70,7 @@
     line-height: 1.625;
     color: colors.$grey;
     word-spacing: 0.1em;
+    max-inline-size: 445px;
 
     @media only screen and (min-width: 768px) {
       font-size: fs.$hero-subtext;
@@ -117,11 +118,27 @@
       max-width: 100%;
       margin-inline: 0;
     }
+  }
 
-    img {
+  &__img {
+    &-mobile {
       display: block;
       width: 100%;
       height: auto;
+
+      @media only screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &-desktop {
+      display: none;
+      width: 100%;
+      height: auto;
+
+      @media only screen and (min-width: 768px) {
+        display: block;
+      }
     }
   }
 
@@ -207,29 +224,51 @@
   background: colors.$light-blue-gradient;
   width: 100%;
 
+  &__title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.33;
+
+    @media only screen and (min-width: 768px) {
+      font-size: fs.$services-title;
+      line-height: 1.25;
+    }
+  }
+
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(339px, 1fr));
-    gap: 56px 30px;
-    max-width: 1440px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: space.$service-row-gap space.$service-col-gap;
+    max-width: 500px;
     margin-inline: auto;
     padding-inline: space.$footer-padding-lr-small;
 
     @media only screen and (min-width: 768px) {
+      max-width: 1440px;
       padding-inline: space.$footer-padding-lr-large;
     }
   }
 }
 
 .service {
-  background-color: colors.$light;
+  padding-block-start: 24px;
   box-shadow: 0rem 1.5625rem 3.125rem rgba(6, 22, 141, 0.0442381);
-  border-radius: 10px;
-  padding-inline: 28px;
-  padding-block-end: 32px;
-  @media only screen and (min-width: 768px) {
-    padding-inline: 32px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: colors.$light;
+    border-radius: 10px;
+    padding-inline: 28px;
+    padding-block-end: 32px;
+
+    @media only screen and (min-width: 768px) {
+      padding-inline: 32px;
+    }
   }
+
+
 
   &__img {
     display: block;
@@ -237,15 +276,56 @@
     height: auto;
     transform: translateY(-24px);
   }
+
+  &__title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-block-end: 1rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: fs.$service-title;
+      margin-block-end: space.$service-title-b-margin;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: colors.$grey;
+    margin-block-end: 24px;
+    max-inline-size: 286px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: fs.$service-text;
+      line-height: 1.25;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: colors.$red-orange;
+    text-decoration: none;
+
+    &:hover {
+      color: colors.$light-pink;
+    }
+  }
 }
 
 .service.intro {
+  border-radius: 10px;
+  padding-inline: 28px;
+  padding-block-end: 32px;
   padding-block-start: 24px;
   color: colors.$light;
   background: colors.$orange-pink-gradient;
   box-shadow: none;
 
   @media only screen and (min-width: 768px) {
-    padding-block-start: 56px;
+    padding-block-start: 80px;
   }
 }
