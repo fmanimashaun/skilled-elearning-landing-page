@@ -26,6 +26,8 @@ $hero-details-hours-v-offset: clamp(-2.37rem, calc(-12.09rem + 20.24vw), 6.13rem
 $hero-details-members-v-offset: clamp(-0.87rem, calc(-9.23rem + 17.41vw), 6.44rem); // -14px - 103px
 
 $service-b-margin: clamp(5rem, calc(3.68rem + 5.63vw), 8.75rem); // 80px - 140px
+$service-t-padding-large:  clamp(3.50rem, calc(2.93rem + 1.19vw), 4.00rem); // 56px - 64px
+$service-b-padding-large: clamp(2.00rem, calc(1.43rem + 1.19vw), 2.50rem); // 32px - 40px
 $service-title-b-margin: clamp(1rem, calc(0.43rem + 1.19vw), 1.5rem); // 16px - 24px
 $service-col-gap:  clamp(0.63rem, calc(-0.8rem + 2.98vw), 1.88rem); // 10px - 30px
 $service-row-gap:  clamp(1rem, calc(0.12rem + 3.76vw), 3.5rem); // 16px - 56px
