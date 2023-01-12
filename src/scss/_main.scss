@@ -11,11 +11,11 @@
 
 .hero {
   width: 100%;
-  max-width: 1440px;
+  max-width: 90rem;
   margin-inline: auto;
   padding-inline: space.$main-padding-lr-small;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 48rem) {
     padding-inline: space.$main-padding-l-large space.$main-padding-r-large;
   }
 
@@ -27,11 +27,11 @@
     width: 100%;
     margin-block-end: space.$hero-b-margin-small;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 33px;
+      gap: 2.0625rem;
       margin-block-end: calc(-1 * space.$hero-b-margin-large);
     }
   }
@@ -41,23 +41,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 25px;
+    gap: 1.5625rem;
     width: 100%;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       gap: 0;
-      flex-basis: 457px;
-      min-width: 398px;
+      flex-basis: 28.5625rem;
+      min-width: 24.875rem;
       padding-block-start: space.$hero-body-padding-t-large;
     }
   }
 
   &__title {
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 40px;
     line-height: 1.25;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       margin-block-end: space.$hero-title-margin-b-large;
       font-size: fs.$hero-title;
       line-height: 1.27;
@@ -66,26 +66,26 @@
 
   &__text {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.625;
     color: colors.$grey;
     word-spacing: 0.1em;
-    max-inline-size: 445px;
+    max-inline-size: 27.8125rem;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       font-size: fs.$hero-subtext;
       margin-block-end: space.$hero-subtext-margin-b-large;
     }
   }
 
   &__btn {
-    margin-block-end: 46px;
-    @include mixins.btn(28px, colors.$orange-pink-gradient);
+    margin-block-end: 2.875rem;
+    @include mixins.btn(1.75rem, colors.$orange-pink-gradient);
     @include mixins.btn-hover(colors.$orange-pink-gradien-hover);
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       margin-block-end: 0;
-      @include mixins.btn(28px,
+      @include mixins.btn(1.75rem,
         colors.$orange-pink-gradient,
         0.78em,
         0.78em,
@@ -97,23 +97,23 @@
   &__body-right {
     width: 100%;
 
-    @media only screen and (min-width: 768px) {
-      flex-basis: 217px;
+    @media only screen and (min-width: 48rem) {
+      flex-basis: 13.5625rem;
       flex-shrink: 0;
       flex-grow: 1;
-      max-width: 317px;
+      max-width: 19.8125rem;
       padding: 0;
     }
   }
 
   &__img-wrapper {
     position: relative;
-    padding: 24px 37px;
+    padding: 1.5rem 2.3125rem;
     width: 100%;
-    max-width: 327px;
+    max-width: 20.4375rem;
     margin-inline: auto;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       padding: 0;
       max-width: 100%;
       margin-inline: 0;
@@ -126,7 +126,7 @@
       width: 100%;
       height: auto;
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 48rem) {
         display: none;
       }
     }
@@ -136,7 +136,7 @@
       width: 100%;
       height: auto;
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 48rem) {
         display: block;
       }
     }
@@ -146,27 +146,27 @@
     position: absolute;
     width: fit-content;
     background-color: colors.$light;
-    box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
-    border-radius: 15px;
+    box-shadow: 0rem 2.125rem 3.375rem rgba(6, 22, 141, 0.158854);
+    border-radius: 0.9375rem;
 
     &-title {
       font-weight: 700;
-      font-size: 0.875rem;
-      line-height: 1.75rem;
+      font-size: 14px;
+      line-height: 28px;
       color: colors.$grey;
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 48rem) {
         font-size: fs.$hero-details-title;
-        line-height: 1.75rem;
+        line-height: 28px;
       }
     }
 
     &-detail {
       font-weight: 800;
-      font-size: 2rem;
-      line-height: 2.5rem;
+      font-size: 32px;
+      line-height: 40px;
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 48rem) {
         font-size: fs.$hero-details-text;
         line-height: 1.25;
       }
@@ -175,9 +175,9 @@
     &.members {
       top: 0;
       right: 0;
-      padding: 16px 20px;
+      padding: 1rem 1.25rem;
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 48rem) {
         padding-block: space.$hero-details-tb-padding;
         padding-inline-start: space.$hero-details-l-padding;
         padding-inline-end: space.$hero-details-members-r-padding;
@@ -188,9 +188,9 @@
     &.hours {
       bottom: 0;
       left: 0;
-      padding: 16px 45px 16px 20px;
+      padding: 1rem 2.8125rem 1rem 1.25rem;
 
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 48rem) {
         padding-block: space.$hero-details-tb-padding;
         padding-inline: space.$hero-details-l-padding;
         padding-inline-end: space.$hero-details-hours-r-padding;
@@ -202,7 +202,7 @@
   &__img-bg {
     display: none;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       display: block;
       position: absolute;
       width: 100%;
@@ -210,7 +210,7 @@
       z-index: 100;
       bottom: 0;
       left: 0;
-      border-radius: 158px;
+      border-radius: 9.875rem;
       background: colors.$blue-pink-gradient;
       transform: rotate(45deg);
       transform-origin: 50% 86%;
@@ -226,10 +226,10 @@
 
   &__title {
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.33;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       font-size: fs.$services-title;
       line-height: 1.25;
     }
@@ -237,53 +237,52 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20.625rem, 1fr));
     gap: space.$service-row-gap space.$service-col-gap;
-    max-width: 500px;
+    max-width: 31.25rem;
     margin-inline: auto;
     padding-inline: space.$footer-padding-lr-small;
 
-    @media only screen and (min-width: 768px) {
-      max-width: 1440px;
+    @media only screen and (min-width: 48rem) {
+      max-width: 90rem;
       padding-inline: space.$footer-padding-lr-large;
     }
   }
 }
 
 .service {
-  padding-block-start: 24px;
-  box-shadow: 0rem 1.5625rem 3.125rem rgba(6, 22, 141, 0.0442381);
+  padding-block-start: 1.5rem;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
 
   &-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
     background-color: colors.$light;
-    border-radius: 10px;
-    padding-inline: 28px;
-    padding-block-end: 32px;
+    border-radius: 0.625rem;
+    padding-inline: 1.75rem;
+    padding-block-end: 2rem;
 
-    @media only screen and (min-width: 768px) {
-      padding-inline: 32px;
+    @media only screen and (min-width: 48rem) {
+      padding-inline: 2rem;
     }
   }
 
-
-
   &__img {
     display: block;
-    width: 56px;
+    width: 3.5rem;
     height: auto;
-    transform: translateY(-24px);
+    transform: translateY(-1.5rem);
   }
 
   &__title {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.25;
-    margin-block-end: 1rem;
+    margin-block-end: 16px;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       font-size: fs.$service-title;
       margin-block-end: space.$service-title-b-margin;
     }
@@ -291,22 +290,20 @@
 
   &__text {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625;
     color: colors.$grey;
-    margin-block-end: 24px;
-    max-inline-size: 286px;
+    margin-block-end: 1.5rem;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 48rem) {
       font-size: fs.$service-text;
-      line-height: 1.25;
     }
   }
 
   &__link {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     color: colors.$red-orange;
     text-decoration: none;
 
@@ -317,15 +314,15 @@
 }
 
 .service.intro {
-  border-radius: 10px;
-  padding-inline: 28px;
-  padding-block-end: 32px;
-  padding-block-start: 24px;
+  border-radius: 0.625rem;
+  padding-inline: 1.75rem;
+  padding-block-end: 2rem;
+  padding-block-start: 1.5rem;
   color: colors.$light;
   background: colors.$orange-pink-gradient;
   box-shadow: none;
 
-  @media only screen and (min-width: 768px) {
-    padding-block-start: 80px;
+  @media only screen and (min-width: 48rem) {
+    padding-block-start: 5rem;
   }
 }
